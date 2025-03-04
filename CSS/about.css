@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#introduction h3 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+#introduction h1 {
+    font-size: 6rem;
+    margin: 0;
+    background: linear-gradient(90deg, #FFBE0B, #9747FF);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#skills {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000022;
+}
+
+#skills h2 {
+    font-size: 2rem;
+    margin: 0;
+    line-height: 0;
+}
+#skills ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+}
+
+#skills ul li {
+    margin: 0 10px;
+    padding: 0;
+    background-color: #00000041;
+    width: 120px;
+    height: 160px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+#skills ul a{
+    display: flex;
+}
+#skills img {
+    width: 75px;
+    height: 75px;
+    margin-bottom: 30%;
+}
+#skills ul h4 {
+    font-size: 1.25rem;
+    margin: 0;
+    position: absolute;
+    bottom: 15px;
+}
+
+#more {
+    background-color: #181818;
+    font-size: 2rem;
+    position: relative;
+}
+#more p {
+    width: 50vw;
+    text-align: center;
+}
+
+.link {
+    margin-top: 2.5%;
+}

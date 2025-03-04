@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT - ERIK THORSELL</title>
+    <link rel="stylesheet" href="./CSS/main.css">
+    <link rel="stylesheet" href="./CSS/contact.css">
+    <link rel="icon" href="./CSS/assets/PRINCESSTYCOON.PNG" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <a href="index.html"><h1>THORSELL</h1></a>
+        <hr>
+        <a href="about.html"><h2>ABOUT</h2></a>
+        <a href="school.html"><h2>SCHOOL</h2></a>
+        <a href="interests.html"><h2>INTERESTS</h2></a>
+    </nav>
+    <h1>CONTACT ME</h1>
+    <div id="container">
+        <form>
+            <input type="text" id="header" placeholder="subject goes here... (optional)">
+            <textarea id="content" placeholder="text goes here..." ></textarea>
+            <input type="submit" value="SEND">
+        </form>
+        <div>
+            <img src="./CSS/assets/profilbild.jpg" alt="A picture of me">
+            <a href="#" class="link" target="_blank">DOWNLOAD MY CV</a>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector("form").addEventListener("submit", function(e) {
+            e.preventDefault();
+            const subject = document.getElementById("header").value;
+            const body = document.getElementById("content").value;
+            window.location.href = `mailto:erik.thorsell@elev.ga.ntig.se?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        });
+    </script>
+</body>
+</html>

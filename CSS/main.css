@@ -1,0 +1,148 @@
+/* import custom font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body{
+    background-color: #212D40;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;  
+    color: #fff;
+}
+
+section {
+    height:100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Navbar which is the same on every page */
+nav {
+    background-color: #364156;
+    border: 1px solid #ffffff35;
+    border-radius: 27px;
+    width: clamp(300px, 90vw, 900px);
+    height: clamp(50px, 8vh, 100px);
+    position: absolute;
+    left: 50%;
+    top: 3%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav hr {
+    margin: 0 0 0 0;
+    height: 80%;
+}
+nav h2 {
+    font-size: 1.3rem;
+    color: #fff;
+}
+#hamburger {
+    display: none;
+    width: 5vh;
+    height: 5vh;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    right: 8%;
+    top: 2.12vh;
+}
+#hamburger hr {
+    height: 1px;
+    background-color: whitesmoke;
+    border: 1px solid whitesmoke;
+}
+
+.active {
+    display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+    #hamburger {
+        display: flex;
+    }
+
+    nav {
+        flex-direction: column;
+        height: fit-content;
+        top: 1%;
+    }
+    nav > hr {
+        width: 80%;
+        display: none;
+    }
+    nav h1 {
+        font-size: 2rem;
+        margin: 1rem;
+    }
+    nav h2 {
+        font-size: 1.5rem;
+        margin: 1rem;
+        display: none;
+    }
+}
+
+.noselect {
+    user-select: none;
+}
+
+/* contact me button */
+.contact-me {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bolder;
+    color: #fff;
+    height: 40px;
+    width: 150px;
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translateX(-50%);
+    background-color: #D9D9D910;
+    border: 1px solid #ffffff40;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.link {
+    color: #ffffff40;
+    text-decoration: underline;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+@keyframes bobbing {
+    0% {
+        bottom: -20px;
+    }
+    50% {
+        bottom: -30px;
+    }
+    100% {
+        bottom: -20px;
+    }
+}
+
+.arrow {
+    transform: rotate(180deg) scaleX(1.5);
+    font-size: 3rem;
+    font-weight: 150;
+    color: #ffffff50;
+    position: absolute;
+    bottom: -20px;
+    animation: bobbing 3s infinite;
+}
+
+::selection {
+    background-color: #8eff8851;
+}
