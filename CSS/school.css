@@ -68,3 +68,29 @@ body {
     height: 45vh;
     width: 45vh;
 }
+
+@media only screen and (max-width: 600px) {
+    #container {
+        flex-direction: column;
+    }
+    #container p {
+        text-align: center;
+    }
+    #container img {
+        height: 25vh;
+        width: 25vh;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+    #container img {
+        height: 30vh;
+        width: 30vh;
+        flex: .25;
+    }
+
+    #container p {
+        font-size: 2.5vw;
+        flex: 4;
+    }
+}

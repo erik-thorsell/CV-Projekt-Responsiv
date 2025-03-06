@@ -71,3 +71,44 @@ input[type="submit"] {
     border: 2px solid #ffffff40;
     border-radius: 10px;
 }
+
+@media only screen and (max-width: 600px) {
+    body > h1 {
+        font-size: 3rem;
+    }
+    #container div {
+        margin: 5px;
+    }
+    form {
+        width: 80%;
+    }
+    input[type="text"], textarea {
+        width: 80%;
+    }
+    input[type="submit"] {
+        width: 15vh;
+        margin-top: 0;
+    }
+    #container img {
+        width: 15vh;
+        height: 15vh;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+    body > h1 {
+        font-size: 3rem;
+    }
+
+    input[type="text"], textarea {
+        width: 100%;
+    }
+    #container img {
+        width: 20vh;
+        height: 20vh;
+        margin-left: 10vh;
+    }
+    .link {
+        margin-left: 7.5vh;
+    }
+}

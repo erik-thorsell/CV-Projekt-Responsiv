@@ -77,6 +77,37 @@ body {
     text-align: center;
 }
 
+@media only screen and (max-width: 600px) {
+    #skills ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 300px;
+    }
+    #skills ul li {
+        margin: 10px;
+    }
+    
+    #more p {
+        width: 80vw;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+    #skills ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 500px;
+    }
+    #skills ul li {
+        margin: 10px;
+    }
+    
+    #more p {
+        width: 80vw;
+    }
+    
+}
+
 .link {
     margin-top: 2.5%;
 }
